@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binance Wallet - Your World of Web3</title>
+    <title>Exness Trading Bot - Automated Trading Solution</title>
     <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkJpbmFuY2UgV2FsbGV0IiwKICAic2hvcnRfbmFtZSI6ICJCaW5hbmNlV2FsbGV0IiwKICAiZGVzY3JpcHRpb24iOiAiWW91ciBXb3JsZCBvZiBXZWIzIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwQjBFMTEiLAogICJ0aGVtZV9jb2xvciI6ICIjRjBCOTBCIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lpSUdobGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEhCaGRHZ2daSWxzYkQwaVkzVnljbVZ1ZEVOdmJHOXlJaUJrUFNKTk1UQXVORFl6TURVM1FqRXdMak5ET1M0M016azJOQ0E1TGpreE5qWXdOQ0E0TGpnME1EQXpOeUE0TGpnME1EQXpOeUJET1M0ek9EY3hOemtnT0M0NE5EQXdNemNnTWpReUxqTXpOamMxSURFeUxqSXpOek0xSURJME1pNHpNelkzTlVNeU5TNDNNREUzTWlBeU5ESXVNek0yTnpVZ01qZ3VNVFV5T0RJZ01qUXlMak16TmpjMUlERXdJaTgrUEM5emRtYysiLAogICAgICAic2l6ZXMiOiAiMTI4eDEyOCIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXQp9">
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgaGVsbmM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMC40NjMwNTdCMTAuM0M5LjczOTY0IDkuOTE2MDQgOC44NDAzNyA4Ljg0MDAzNyA4Ljg0MDAzN0M5LjM4NzE3OSA4Ljg0MDAzNyAyNDIuMzM2NzUgMTIuMjM3MzUgMjQyLjMzNjc1QzI1LjcwMTcyIDI0Mi4zMzY3NSAyOC4xNTI4MiAyNDIuMzM2NzUgMTBpIj4KPC9zdmc+">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBDNi41IDAgMiA0LjUgMiAxMDIgMTcuNSAyMiAyMiAxNy41IDIyIDEyQzIyIDYuNSAxNy41IDIgMTIgMiIgc3Ryb2tlPSIjMDA5MEZGIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEyIDRIMjBWMTJWMTJIMlYxMiIgc3Ryb2tlPSIjRkZDNjAwIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTggMTZIMTZNNiAxNkgxOG0tNC00VjE2IiBzdHJva2U9IiMwMDkwRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPg==">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +14,23 @@
             theme: {
                 extend: {
                     colors: {
-                        'binance-yellow': '#F0B90B',
-                        'binance-dark': '#0B0E11',
-                        'binance-gray': '#1E2329',
-                        'binance-light-gray': '#2B3139',
-                        'binance-text': '#848E9C',
-                        'binance-success': '#00D4AA',
-                        'binance-error': '#F6465D'
+                        // Exness Brand Colors (Dackmode/Dackblue Background)
+                        'exness-blue': '#0090FF', // Primary blue
+                        'exness-yellow': '#FFC600', // Secondary/Action yellow (real Exness yellow button tag)
+                        'exness-dark-bg': '#1A202C', // Dark Blue Background (Dackblue equivalent)
+                        'exness-gray': '#2D3748', // Section background/card color
+                        'exness-text': '#B0B5BB', // Light text on dark background
+                        'exness-success': '#00D4AA',
+                        'exness-error': '#F6465D'
                     },
                     fontFamily: {
                         'inter': ['Inter', 'sans-serif']
                     },
                     backgroundImage: {
-                        'hero-gradient': 'linear-gradient(135deg, #F0B90B 0%, #FF8A00 100%)',
-                        'card-gradient': 'linear-gradient(135deg, rgba(240, 185, 11, 0.1) 0%, rgba(255, 138, 0, 0.05) 100%)'
+                        // Use Exness Blue/Yellow gradient for Hero button
+                        'hero-gradient': 'linear-gradient(135deg, #FFC600 0%, #FF9000 100%)', 
+                        // Use a subtle Blue/Dark gradient for cards
+                        'card-gradient': 'linear-gradient(135deg, rgba(0, 144, 255, 0.1) 0%, rgba(26, 32, 44, 0.05) 100%)' 
                     }
                 }
             }
@@ -36,22 +39,24 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: #0B0E11;
+            background: #1A202C; /* Dackblue Background */
             color: #FFFFFF;
         }
-        
+
         .glass-effect {
-            background: rgba(30, 35, 41, 0.8);
+            /* Kept the existing glass style structure but updated colors */
+            background: rgba(45, 55, 72, 0.8); /* exness-gray equivalent with transparency */
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(240, 185, 11, 0.1);
+            border: 1px solid rgba(0, 144, 255, 0.1); /* Exness Blue border for definition */
         }
-        
+
         .hover-glow:hover {
-            box-shadow: 0 0 20px rgba(240, 185, 11, 0.3);
+            /* Updated glow color to Exness Yellow */
+            box-shadow: 0 0 20px rgba(255, 198, 0, 0.5); 
             transform: translateY(-2px);
             transition: all 0.3s ease;
         }
-        
+
         .pwa-install-banner {
             display: none;
             position: fixed;
@@ -59,15 +64,16 @@
             right: 20px;
             z-index: 1000;
         }
-        
+
         .trading-card {
-            background: linear-gradient(135deg, rgba(30, 35, 41, 0.9) 0%, rgba(43, 49, 57, 0.5) 100%);
-            border: 1px solid rgba(240, 185, 11, 0.2);
+            /* Updated card gradient to Exness Dark theme style */
+            background: linear-gradient(135deg, rgba(26, 32, 44, 0.9) 0%, rgba(45, 55, 72, 0.5) 100%);
+            border: 1px solid rgba(0, 144, 255, 0.2); /* Exness Blue border */
         }
-        
+
         .price-up { color: #00D4AA; }
         .price-down { color: #F6465D; }
-        
+
         .chat-widget {
             position: fixed;
             bottom: 20px;
@@ -77,46 +83,43 @@
         }
     </style>
 </head>
-<body class="bg-binance-dark">
-    <!-- PWA Install Banner -->
+<body class="bg-exness-dark-bg">
+
     <div id="pwa-install-banner" class="pwa-install-banner glass-effect rounded-lg p-4 max-w-sm">
         <div class="flex items-center justify-between">
             <div>
-                <h4 class="font-semibold text-white">Install Binance Wallet</h4>
-                <p class="text-sm text-binance-text">Add to home screen for quick access</p>
+                <h4 class="font-semibold text-white">Install Exness Bot</h4>
+                <p class="text-sm text-exness-text">Add to home screen for quick trading access</p>
             </div>
             <div class="flex gap-2">
-                <button id="install-pwa" class="bg-binance-yellow text-black px-3 py-1 rounded-md text-sm font-medium">Install</button>
-                <button id="dismiss-banner" class="text-binance-text text-sm">✕</button>
+                <button id="install-pwa" class="bg-exness-yellow text-black px-3 py-1 rounded-md text-sm font-medium">Install</button>
+                <button id="dismiss-banner" class="text-exness-text text-sm">✕</button>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-effect">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <!-- Binance logo in yellow -->
-                    <img src="https://assets.coingecko.com/coins/images/825/large/binance-coin-logo.png" alt="Binance" class="w-10 h-10 rounded" />
-                    <span class="text-xl font-bold">Binance Wallet</span>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
+                        <rect width="40" height="40" rx="8" fill="#0090FF"/>
+                        <path d="M10 28L15 33L30 18" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 12L15 17L30 2" stroke="#FFC600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-xl font-bold text-white">Exness Bot</span>
                 </div>
-
-                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-white hover:text-binance-yellow transition-colors">Features</a>
-                    <a href="#security" class="text-white hover:text-binance-yellow transition-colors">Security</a>
-                    <a href="#trading" class="text-white hover:text-binance-yellow transition-colors">Trading</a>
-                    <a href="#developers" class="text-white hover:text-binance-yellow transition-colors">Developers</a>
+                    <a href="#features" class="text-white hover:text-exness-yellow transition-colors">Features</a>
+                    <a href="#security" class="text-white hover:text-exness-yellow transition-colors">Security</a>
+                    <a href="#trading" class="text-white hover:text-exness-yellow transition-colors">Trading</a>
+                    <a href="#developers" class="text-white hover:text-exness-yellow transition-colors">Developers</a>
                 </div>
-
-                <!-- Auth & Connect Wallet -->
                 <div class="flex items-center space-x-4">
-                    <button id="connect-wallet" class="hidden md:block bg-transparent border border-binance-yellow text-binance-yellow px-4 py-2 rounded-md hover:bg-binance-yellow hover:text-black transition-all">
+                    <button id="connect-wallet" class="hidden md:block bg-transparent border border-exness-blue text-exness-blue px-4 py-2 rounded-md hover:bg-exness-blue hover:text-white transition-all">
                         Connect Bot
                     </button>
-                    <button id="auth-button" class="bg-binance-yellow text-black px-4 py-2 rounded-md font-medium hover-glow">
+                    <button id="auth-button" class="bg-exness-yellow text-black px-4 py-2 rounded-md font-medium hover-glow">
                         Get Bot
                     </button>
                 </div>
@@ -124,104 +127,96 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="pt-24 pb-16 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <div class="space-y-6">
                 <h1 class="text-4xl md:text-6xl font-bold">
-                    <span class="block">Simple.</span>
-                    <span class="block">Secure.</span>
-                    <span class="block text-binance-yellow">Rewarding.</span>
+                    <span class="block">Automate.</span>
+                    <span class="block">Execute.</span>
+                    <span class="block text-exness-yellow">Profit.</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-binance-text max-w-2xl mx-auto">
-                    Your World of Web3.
+                <p class="text-xl md:text-2xl text-exness-text max-w-2xl mx-auto">
+                    The next-generation trading tool powered by Exness.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
                     <button id="get-app-btn" class="bg-hero-gradient text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow flex items-center space-x-2">
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14z"/>
                         </svg>
-                        <span>Get Wallet App</span>
+                        <span>Get Exness Bot App</span>
                     </button>
-                    <button class="text-binance-yellow border border-binance-yellow px-8 py-4 rounded-lg font-semibold hover:bg-binance-yellow hover:text-black transition-all">
-                        Explore Web3
+                    <button class="text-exness-blue border border-exness-blue px-8 py-4 rounded-lg font-semibold hover:bg-exness-blue hover:text-white transition-all">
+                        Explore Strategies
                     </button>
                 </div>
             </div>
 
-            <!-- Hero Image/Animation -->
             <div class="mt-16">
-                <!-- Placeholder for wallet interface preview -->
                 <div class="max-w-4xl mx-auto glass-effect rounded-2xl p-8">
-                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" alt="Binance Wallet Interface Preview" class="w-full h-auto rounded-xl"/>
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" alt="Exness Trading Interface Preview" class="w-full h-auto rounded-xl"/>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
     <section id="features" class="py-16 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore Web3 with Ease</h2>
-                <p class="text-xl text-binance-text max-w-3xl mx-auto">
-                    Trade your favorite tokens. Access multiple blockchains. Explore some of the best dApps. All without leaving your wallet.
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Unmatched Flexibility and Speed</h2>
+                <p class="text-xl text-exness-text max-w-3xl mx-auto">
+                    Connect your account. Deploy any strategy. Execute with Exness's superior market conditions. All in one place.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Transfer Feature -->
                 <div class="trading-card rounded-2xl p-8 hover-glow">
-                    <div class="w-16 h-16 bg-binance-yellow rounded-full flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-exness-yellow rounded-full flex items-center justify-center mb-6">
                         <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="text-black">
                             <path d="M21 12l-4-4v3h-9v2h9v3l4-4zM3 18v-6h2v4h14v2H5c-1.1 0-2-.9-2-2zM3 6c0-1.1.9-2 2-2h14v2H5v4H3V6z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Transfer</h3>
-                    <p class="text-binance-text mb-6">Bridge between the exchange and Web3</p>
-                    <p class="text-sm text-binance-text">
-                        Why juggle multiple apps? Simply do it all in one! Transfer funds between exchange and wallet quickly and easily. Move across CeFi, DeFi, and Web3 in a single tap.
+                    <h3 class="text-2xl font-bold mb-4">Instant Connect</h3>
+                    <p class="text-exness-text mb-6">Link your MT4/MT5 account seamlessly</p>
+                    <p class="text-sm text-exness-text">
+                        Why hassle with complex APIs? Connect your Exness trading account directly to the bot. Manage funds, monitor performance, and execute trades instantly.
                     </p>
                 </div>
 
-                <!-- Swap Feature -->
                 <div class="trading-card rounded-2xl p-8 hover-glow">
-                    <div class="w-16 h-16 bg-binance-yellow rounded-full flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-exness-yellow rounded-full flex items-center justify-center mb-6">
                         <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="text-black">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Swap</h3>
-                    <p class="text-binance-text mb-6">Swap tokens cross-chain at the best prices</p>
-                    <p class="text-sm text-binance-text">
-                        Powered by Binance Bridge and other DEXs, trade thousands of tokens across various networks. Get the best prices thanks to deep liquidity and low slippage.
+                    <h3 class="text-2xl font-bold mb-4">High-Speed Execution</h3>
+                    <p class="text-exness-text mb-6">Enjoy Exness's low latency trading environment</p>
+                    <p class="text-sm text-exness-text">
+                        Leverage one of the industry's best execution speeds. The bot transmits orders directly, ensuring minimal slippage and instant fills across Forex, Crypto, and Metals.
                     </p>
                 </div>
 
-                <!-- Earn Feature -->
                 <div class="trading-card rounded-2xl p-8 hover-glow">
-                    <div class="w-16 h-16 bg-binance-yellow rounded-full flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-exness-yellow rounded-full flex items-center justify-center mb-6">
                         <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="text-black">
                             <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Earn</h3>
-                    <p class="text-binance-text mb-6">Grow your portfolio with one click</p>
-                    <p class="text-sm text-binance-text">
-                        Put your idle crypto to work. Find the best opportunities to earn yield on your assets in seconds.
+                    <h3 class="text-2xl font-bold mb-4">Strategy Management</h3>
+                    <p class="text-exness-text mb-6">Monitor and deploy multiple EAs easily</p>
+                    <p class="text-sm text-exness-text">
+                        Put your trading logic to work without interruptions. Deploy and manage multiple Expert Advisors (EAs) or custom strategies from a single, centralized dashboard.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trading Dashboard Section -->
-<section id="trading" class="py-16 px-4 bg-binance-gray">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Live Trading Dashboard</h2>
-            <p class="text-xl text-binance-text">Real-time market data and portfolio management</p>
-        </div>
+    <section id="trading" class="py-16 px-4 bg-exness-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Live Exness Trading Dashboard</h2>
+                <p class="text-xl text-exness-text">Real-time market data and automated trade history</p>
+            </div>
 
         <!-- TradingView Widget -->
         <div class="tradingview-widget-container">
@@ -243,154 +238,146 @@
                     "container_id": "tradingview_btcusdt"
                 });
             </script>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    
-
-    <!-- Security Section -->
     <section id="security" class="py-16 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Putting you in control.</h2>
-                <p class="text-xl text-binance-yellow">Security at every stage.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Reliability and Fund Safety.</h2>
+                <p class="text-xl text-exness-blue">Trusted by millions of traders worldwide.</p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center">
                     <div class="w-20 h-20 bg-card-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-binance-yellow">
+                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-yellow">
                             <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11H16V16H8V11H9.2V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.4,8.7 10.4,10V11H13.6V10C13.6,8.7 12.8,8.2 12,8.2Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Self-custody wallet</h3>
-                    <p class="text-binance-text">
-                        Funds in the wallet are exclusively held and managed by the user. You are in complete control over your crypto assets.
+                    <h3 class="text-xl font-bold mb-4">Regulated Broker</h3>
+                    <p class="text-exness-text">
+                        Exness is strictly regulated by multiple tier-1 financial bodies, ensuring compliance and the highest standards of operation.
                     </p>
                 </div>
 
                 <div class="text-center">
                     <div class="w-20 h-20 bg-card-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-binance-yellow">
+                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-yellow">
                             <path d="M9,12L11,14L15,10L13,8L11,10L9,12M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Powered by MPC</h3>
-                    <p class="text-binance-text">
-                        Advanced multi-party computation (MPC) technology creates three separately stored 'key shares'. Enjoy unparalleled security without the need for a seed phrase.
+                    <h3 class="text-xl font-bold mb-4">Client Fund Protection</h3>
+                    <p class="text-exness-text">
+                        Client funds are segregated from the company's operating capital in separate bank accounts for enhanced security and peace of mind.
                     </p>
                 </div>
 
                 <div class="text-center">
                     <div class="w-20 h-20 bg-card-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-binance-yellow">
+                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-yellow">
                             <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,14L18.5,6.5L17.09,5.09L11,11.18L6.91,7.09L5.5,8.5L11,14Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Built-in risk controls</h3>
-                    <p class="text-binance-text">
-                        Get alerts if a token or blockchain carries security risks, including wrong address protection or malicious contract detection.
+                    <h3 class="text-xl font-bold mb-4">Bot Risk Management</h3>
+                    <p class="text-exness-text">
+                        Built-in controls and alerts for your automated strategies, preventing unexpected large losses and ensuring reliable bot operation.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Developers Section -->
-    <section id="developers" class="py-16 px-4 bg-binance-gray">
+    <section id="developers" class="py-16 px-4 bg-exness-gray">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Build with Binance Wallet</h2>
-                <p class="text-xl text-binance-text">Engage with millions of users and drive impactful campaigns</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Build Your Future with Exness API</h2>
+                <p class="text-xl text-exness-text">Integrate custom algorithms and strategies easily</p>
             </div>
-
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">Engage with Millions of Users</h3>
-                    <p class="text-binance-text mb-6">
-                        Deepen your understanding of your users with our robust Wallet SDK. Connect, engage, and grow with Binance's vast and active user base.
+                    <h3 class="text-2xl font-bold mb-4">Leverage Our Connectivity</h3>
+                    <p class="text-exness-text mb-6">
+                        Deepen your understanding of market dynamics and seamlessly connect your advanced trading systems using the Exness infrastructure.
                     </p>
-                    <button class="bg-binance-yellow text-black px-6 py-3 rounded-lg font-semibold hover-glow">
-                        Get Wallet SDK
+                    <button class="bg-exness-yellow text-black px-6 py-3 rounded-lg font-semibold hover-glow">
+                        Access Trading API
                     </button>
                 </div>
 
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">Drive Impactful Campaigns</h3>
-                    <p class="text-binance-text mb-6">
-                        Harness the power of Binance Wallet to host impactful campaigns for your project. Boost your project's visibility and rely on our advanced technology for seamless execution.
+                    <h3 class="text-2xl font-bold mb-4">Maximize Bot Performance</h3>
+                    <p class="text-exness-text mb-6">
+                        Run your Expert Advisors and bots in a stable, low-latency environment provided by Exness. Boost your strategy's visibility and execution speed.
                     </p>
-                    <button 
-                         onclick="window.location.href='https://online-base.github.io/Email/'" 
-                          class="border border-binance-yellow text-binance-yellow px-6 py-3 rounded-lg font-semibold hover:bg-binance-yellow hover:text-black transition-all">
-                     Activate Bot
+                    <button
+                         onclick="window.location.href='https://online-base.github.io/Email/'"
+                         class="border border-exness-blue text-exness-blue px-6 py-3 rounded-lg font-semibold hover:bg-exness-blue hover:text-white transition-all">
+                        Activate Bot
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="py-16 px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-            
+
             <div class="space-y-4">
                 <div class="glass-effect rounded-lg p-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(0)">
-                        <span class="font-semibold">What is Binance Wallet?</span>
+                        <span class="font-semibold">What is the Exness Bot?</span>
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="transform transition-transform" id="faq-icon-0">
                             <path d="M7 10l5 5 5-5z"/>
                         </svg>
                     </button>
-                    <div class="mt-4 text-binance-text hidden" id="faq-content-0">
-                        Binance Wallet is a self-custody Web3 wallet that gives you complete control over your crypto assets. It uses advanced MPC technology for security without seed phrases.
+                    <div class="mt-4 text-exness-text hidden" id="faq-content-0">
+                        The Exness Bot is an automated trading tool designed to connect directly to your Exness trading account (MT4/MT5), allowing you to deploy Expert Advisors and custom trading strategies for high-speed execution.
                     </div>
                 </div>
 
                 <div class="glass-effect rounded-lg p-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(1)">
-                        <span class="font-semibold">What are the benefits of using Binance Wallet?</span>
+                        <span class="font-semibold">How does the Bot ensure fast execution?</span>
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="transform transition-transform" id="faq-icon-1">
                             <path d="M7 10l5 5 5-5z"/>
                         </svg>
                     </button>
-                    <div class="mt-4 text-binance-text hidden" id="faq-content-1">
-                        Enjoy seamless transfers between exchange and wallet, cross-chain swaps at best prices, earning opportunities, and access to thousands of dApps across multiple blockchains.
+                    <div class="mt-4 text-exness-text hidden" id="faq-content-1">
+                        The Bot leverages Exness's commitment to low-latency trading infrastructure and robust connectivity to ensure minimal re-quotes and instant order execution across all major markets.
                     </div>
                 </div>
 
                 <div class="glass-effect rounded-lg p-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(2)">
-                        <span class="font-semibold">Is Binance Wallet a self-custody wallet?</span>
+                        <span class="font-semibold">Is my trading data secure with Exness?</span>
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="transform transition-transform" id="faq-icon-2">
                             <path d="M7 10l5 5 5-5z"/>
                         </svg>
                     </button>
-                    <div class="mt-4 text-binance-text hidden" id="faq-content-2">
-                        Yes, Binance Wallet is a self-custody wallet. You have complete control over your funds, and only you can access and manage your crypto assets.
+                    <div class="mt-4 text-exness-text hidden" id="faq-content-2">
+                        Yes, Exness employs advanced encryption and security protocols. The bot connection is secure, and your account credentials are protected by industry-leading standards.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-binance-gray py-12 px-4">
+    <footer class="bg-exness-gray py-12 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center">
                 <div class="flex items-center justify-center space-x-3 mb-6">
-                    <div class="w-8 h-8 bg-binance-yellow rounded-sm flex items-center justify-center">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-black">
+                    <div class="w-8 h-8 bg-exness-blue rounded-sm flex items-center justify-center">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white">
                             <path d="M12 2L13.41 3.41L16.58 6.58L12 11.17L7.42 6.59L10.59 3.42L12 2ZM2 12L3.41 10.59L6.58 7.42L11.17 12L6.59 16.58L3.42 13.41L2 12ZM12 22L10.59 20.59L7.42 17.42L12 12.83L16.58 17.41L13.41 20.58L12 22ZM22 12L20.59 13.41L17.42 16.58L12.83 12L17.41 7.42L20.58 10.59L22 12Z"/>
                         </svg>
                     </div>
-                    <span class="text-xl font-bold">Binance Wallet</span>
+                    <span class="text-xl font-bold">Exness Bot</span>
                 </div>
-                <p class="text-binance-text mb-8">Web3 is easier with Binance</p>
-                <button class="bg-binance-yellow text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow">
-                    Get Wallet App
+                <p class="text-exness-text mb-8">Elevate your trading with Exness Bot</p>
+                <button class="bg-exness-yellow text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow">
+                    Get Bot App
                 </button>
             </div>
         </div>
@@ -414,15 +401,17 @@
   /* =========================
      Configuration
      ========================= */
-  const CACHE_NAME = 'binance-web3-pwa-v1';
+  const CACHE_NAME = 'exness-bot-pwa-v1';
   const PRECACHE_URLS = ['/', '/index.html', '/Home-page.html'];
-  const APP_NAME = 'Binance Web3 Wallet';
-  const APP_SHORT_NAME = 'Binance';
-  const THEME_COLOR = '#1E2329';
-  const BACKGROUND_COLOR = '#1E2329';
+  const APP_NAME = 'Exness Trading Bot';
+  const APP_SHORT_NAME = 'Ex';
+  const THEME_COLOR = '#0F151F';
+  const BACKGROUND_COLOR = '#000000';
 
   // Official PNG icon to use in the manifest (do NOT use SVG as requested)
-  const ICON_PNG_URL = 'https://assets.coingecko.com/coins/images/825/large/binance-coin-logo.png';
+  const ICON_PNG_URL = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0ZGQjkwQiI+PC9yZWN0PgogIDx0ZXh0IHg9IjEwMCIgeT0iMTQwIiBmb250LXNpemU9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5leDwvdGV4dD4KPC9zdmc+';
+
+
 
   /* =========================
      State
@@ -474,7 +463,7 @@
           { src: ICON_PNG_URL, sizes: '192x192', type: 'image/png', purpose: 'any' },
           { src: ICON_PNG_URL, sizes: '512x512', type: 'image/png', purpose: 'maskable any' }
         ],
-        description: 'Binance Web3 Wallet - manage assets, connect wallets and explore DApps.'
+        description: 'Exness Trading Bot - manage assets, connect wallets and explore DApps.'
       };
 
       const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
@@ -660,7 +649,7 @@
       style: { width: '44px', height: '44px', borderRadius: '8px', objectFit: 'cover', border: '1px solid rgba(255,255,255,0.06)' }
     });
     logoImgWrapper.appendChild(logoImg);
-    const title = createEl('div', { innerText: 'Install Binance Web3 Wallet', style: { fontSize: '18px', fontWeight: 700, color: '#FCD535' } });
+    const title = createEl('div', { innerText: 'Install Exness Trading Bot, style: { fontSize: '18px', fontWeight: 700, color: '#FCD535' } });
     headerRow.appendChild(logoImgWrapper);
     headerRow.appendChild(title);
 
@@ -795,7 +784,7 @@
 
     // Show a short toast-like feedback in page (non-blocking)
     try {
-      const toast = createEl('div', { innerText: success ? 'Binance Web3 Wallet installed' : 'Install failed', style: {
+      const toast = createEl('div', { innerText: success ? 'Exness Trading Bot installed' : 'Install failed', style: {
         position: 'fixed', right: '16px', bottom: '16px', background: '#111827', color: '#fff', padding: '10px 14px', borderRadius: '10px', zIndex: 2147483648, boxShadow: '0 6px 20px rgba(0,0,0,0.4)'
       }});
       document.body.appendChild(toast);
