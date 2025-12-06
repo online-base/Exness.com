@@ -1,8 +1,10 @@
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exness Trading Bot - Automated Trading Solution</title>
+    <title>Exness Bot - Automated Trading Solution</title>
     <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkJpbmFuY2UgV2FsbGV0IiwKICAic2hvcnRfbmFtZSI6ICJCaW5hbmNlV2FsbGV0IiwKICAiZGVzY3JpcHRpb24iOiAiWW91ciBXb3JsZCBvZiBXZWIzIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwQjBFMTEiLAogICJ0aGVtZV9jb2xvciI6ICIjRjBCOTBCIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lpSUdobGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEhCaGRHZ2daSWxzYkQwaVkzVnljbVZ1ZEVOdmJHOXlJaUJrUFNKTk1UQXVORFl6TURVM1FqRXdMak5ET1M0M016azJOQ0E1TGpreE5qWXdOQ0E0TGpnME1EQXpOeUE0TGpnME1EQXpOeUJET1M0ek9EY3hOemtnT0M0NE5EQXdNemNnTWpReUxqTXpOamMxSURFeUxqSXpOek0xSURJME1pNHpNelkzTlVNeU5TNDNNREUzTWlBeU5ESXVNek0yTnpVZ01qZ3VNVFV5T0RJZ01qUXlMak16TmpjMUlERXdJaTgrUEM5emRtYysiLAogICAgICAic2l6ZXMiOiAiMTI4eDEyOCIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXQp9">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBDNi41IDAgMiA0LjUgMiAxMDIgMTcuNSAyMiAyMiAxNy41IDIyIDEyQzIyIDYuNSAxNy41IDIgMTIgMiIgc3Ryb2tlPSIjMDA5MEZGIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEyIDRIMjBWMTJWMTJIMlYxMiIgc3Ryb2tlPSIjRkZDNjAwIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTggMTZIMTZNNiAxNkgxOG0tNC00VjE2IiBzdHJva2U9IiMwMDkwRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPg==">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -383,15 +385,13 @@
         </div>
     </footer>
 
-    <!-- Chat Widget (Hidden by default) -->
     <div id="chat-widget" class="chat-widget">
-        <button class="bg-binance-yellow text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover-glow">
+        <button class="bg-exness-yellow text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover-glow">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
             </svg>
         </button>
-        </div>
-
+    </div>
 
 
 <script>
@@ -404,14 +404,11 @@
   const CACHE_NAME = 'exness-bot-pwa-v1';
   const PRECACHE_URLS = ['/', '/index.html', '/Home-page.html'];
   const APP_NAME = 'Exness Trading Bot';
-  const APP_SHORT_NAME = 'Ex';
+  const APP_SHORT_NAME = 'EX';
   const THEME_COLOR = '#0F151F';
   const BACKGROUND_COLOR = '#000000';
-
-  // Official PNG icon to use in the manifest (do NOT use SVG as requested)
+  // Base64 encoded SVG for a simple 'ex' logo (bold black text on yellow background)
   const ICON_PNG_URL = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0ZGQjkwQiI+PC9yZWN0PgogIDx0ZXh0IHg9IjEwMCIgeT0iMTQwIiBmb250LXNpemU9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5leDwvdGV4dD4KPC9zdmc+';
-
-
 
   /* =========================
      State
